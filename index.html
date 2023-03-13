@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="column column-50 column-offset-25">
+                    <h2>User Registration Form</h2>
+				    <h4><a href="./dashboard.php">Go Dashboard</a></h4>
+                    <form method="POST" action="process_form.php" enctype="multipart/form-data">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required><br><br>
+
+                        <label for="profile_picture">Profile Picture:</label>
+                        <input type="file" id="profile_picture" name="profile_picture" accept="image/*" required><br><br>
+
+                        <input type="submit" value="submit">
+                    </form>
+                </div>    
+            </div>    
+        </div>    
+    </body>
+</html>
